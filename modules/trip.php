@@ -31,21 +31,21 @@ function trac() {
 EOL;
 
   if($data['status'] == 'success') {
-    echo "\n ".$FCL."IP Address    ".$MCL."   ".$data['query'];
-    echo "\n ".$FCL."Country code  ".$MCL."   ".$data['countryCode'];
-    echo "\n ".$FCL."Country       ".$MCL."   ".$data['country'];
-    echo "\n ".$FCL."Date & Time   ".$MCL."   ".date("F j, Y, g:i a");
-    echo "\n ".$FCL."Region code   ".$MCL."   ".$data['region'];
-    echo "\n ".$FCL."Region        ".$MCL."   ".$data['regionName'];
-    echo "\n ".$FCL."City          ".$MCL."   ".$data['city'];
-    echo "\n ".$FCL."Zip code      ".$MCL."   ".$data['zip'];
-    echo "\n ".$FCL."Time zone     ".$MCL."   ".$data['timezone'];
-    echo "\n ".$FCL."ISP           ".$MCL."   ".$data['isp'];
+    echo "\n ".$FCL."ที่อยู่ IP   ".$MCL."   ".$data['query'];
+    echo "\n ".$FCL."รหัสประเทศ  ".$MCL."   ".$data['countryCode'];
+    echo "\n ".$FCL."ประเทศ       ".$MCL."   ".$data['country'];
+    echo "\n ".$FCL."วันที่และเวลา ".$MCL."   ".date("F j, Y, g:i a");
+    echo "\n ".$FCL."รหัสภูมิภาค  ".$MCL."   ".$data['region'];
+    echo "\n ".$FCL."ภูมิภาค        ".$MCL."   ".$data['regionName'];
+    echo "\n ".$FCL."เมือง          ".$MCL."   ".$data['city'];
+    echo "\n ".$FCL."รหัสไปรษณีย์     ".$MCL."   ".$data['zip'];
+    echo "\n ".$FCL."เขตเวลา     ".$MCL."   ".$data['timezone'];
+    echo "\n ".$FCL."ผู้ให้บริการอินเทอร์เน็ต           ".$MCL."   ".$data['isp'];
     echo "\n ".$FCL."Organization  ".$MCL."   ".$data['org'];
-    echo "\n ".$FCL."ASN           ".$MCL."   ".$data['as'];
-    echo "\n ".$FCL."Latitude      ".$MCL."   ".$data['lat'];
-    echo "\n ".$FCL."Longtitude    ".$MCL."   ".$data['lon'];
-    echo "\n ".$FCL."Location      ".$MCL."   ".$data['lat'].",".$data['lon'];
+    echo "\n ".$FCL."องค์กร           ".$MCL."   ".$data['as'];
+    echo "\n ".$FCL."ละติจูด      ".$MCL."   ".$data['lat'];
+    echo "\n ".$FCL."ความยาวนาน    ".$MCL."   ".$data['lon'];
+    echo "\n ".$FCL."ที่ตั้ง      ".$MCL."   ".$data['lat'].",".$data['lon'];
     echo "\n\n$NCL";
   } else {
     echo "\n\033[01;31m Sorry unable to track your\033[01;33m IP Address\033[01;31m !!!\033[00m\n";
